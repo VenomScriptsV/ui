@@ -6,14 +6,14 @@ local ThemeManager = {} do
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
   	['Cyan'] 		= { 1, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"00ff7ff","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
-  	['Orange'] 		= { 2, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"ff7a00","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
-  	['Yellow'] 		= { 2, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"ffdd00","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
-  	['Pink'] 		= { 2, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"ff00fc","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
-  	['Blue'] 		= { 2, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"006dff","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
-  	['Aimware'] 		= { 2, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"ff0000","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
-  	['Gamesense'] 		= { 2, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"00ff21","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
-		['Fatality']		= { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1e1842","AccentColor":"c50754","BackgroundColor":"191335","OutlineColor":"3c355d"}') },
-		['Tokyo Night'] 	= { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
+  	['Orange'] 		= { 3, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"ff7a00","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
+  	['Yellow'] 		= { 4, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"ffdd00","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
+  	['Pink'] 		= { 5, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"ff00fc","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
+  	['Blue'] 		= { 6, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"006dff","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
+  	['Aimware'] 		= { 7, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"ff0000","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
+  	['Gamesense'] 		= { 8, httpService:JSONDecode('{"FontColor":"c8c8c8","MainColor":"0f0f0f","AccentColor":"00ff21","BackgroundColor":"0f0f0f","OutlineColor":"0f0f0f"}') },
+	['Fatality']		= { 9, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1e1842","AccentColor":"c50754","BackgroundColor":"191335","OutlineColor":"3c355d"}') },
+	['Tokyo Night'] 	= { 10, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
 	}
 
 	function ThemeManager:ApplyTheme(theme)
